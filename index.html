@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">Customer Survey</h1>
+  <p id="description"><i>Thank you for shopping with us! Please take a few minutes to rate us so we can serve you
+      better.</i>
+  </p>
+
+  <form action="" id="survey-form">
+    <label for="name" id="name-label">Name <input type="text" id="name" placeholder="Enter your name" required></label>
+    <label for="email" id="email-label">Email <input type="email" id="email" placeholder="ex: myname@example.com"
+        required></label>
+    <label for="age" id="number-label">Age <input type="number" id="number" min="18" max="60" placeholder="Age"></label>
+    <label>Which product would you like to review?</label>
+    <select name="" id="dropdown">
+      <option value="0">Please Select</option>
+      <option value="1">Product A</option>
+      <option value="2">Product B</option>
+      <option value="3">Product C</option>
+      <option value="4">Product D</option>
+    </select>
+
+    <p class="label">Would you recommend the product to your friends? </p>
+    <label for="answer-1">
+      <input class="inline" id="answer-1" name="answer" type="radio" value="1" checked> Of course!
+    </label>
+    <label for="answer-2">
+      <input class="inline" id="answer-2" name="answer" type="radio" value="2"> Never
+    </label>
+    <label for="answer-3">
+      <input class="inline" id="answer-3" name="answer" type="radio" value="2"> Maybe.
+    </label>
+
+    <p class="label">How did you discover?</p>
+    <label for="checbox-1"><input id="checbox-1" type="checkbox" class="inline" value="1"> Recommended by friend</label>
+    <label for="checbox-2"><input id="checbox-2" type="checkbox" class="inline" value="2"> Instagram</label>
+    <label for="checbox-3"><input id="checbox-3" type="checkbox" class="inline" value="3"> Facebook</label>
+    <label for="checbox-4"><input id="checbox-4" type="checkbox" class="inline" value="4"> Youtube</label>
+    <label for="checbox-5"><input id="checbox-5" type="checkbox" class="inline" value="5"> Tiktok</label>
+    <label for="checbox-6"><input id="checbox-6" type="checkbox" class="inline" value="6"> Other</label>
+
+    <label for="comments" class="comments-label">Let us know your thoughts! <textarea id="comments" rows="3" cols="30"
+        placeholder="Type here..."></textarea></label>
+    <button id="submit">Submit</button>
+  </form>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
